@@ -34,12 +34,13 @@ header nav li a:hover {
 body {
     background-size: 79%;
     background-attachment: fixed;
-    background-image: url(../Assets/BG.png);
+    background-image: url(../Assets/BG.png);   
 }
 
 footer {
     /*EDICION PIE DE PAGINA*/
     background-color: black;
+    opacity: 0.7;
 }
 
 
