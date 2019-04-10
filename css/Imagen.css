@@ -1,0 +1,38 @@
+img.format {
+    margin-top: 300%;
+    width: 20px;
+
+}
+
+li.menu-li-superior-rigth {
+    padding: 20px;
+    
+}li.menu-li-superior-rigth {
+    padding: 20px 20px;;  
+}
+
+li.menu-li-superior-left {
+    padding: 20px 20px;  
+}
+
+img.format {
+    /*EDICION IMAGEN LOGO*/
+    display: block;
+    transition: all .5s ease-in-out;
+    transform: scale(1.2);
+    -ms-transform: scale(1.2); // IE 9 
+    -moz-transform: scale(1.2); // Firefox 
+    -webkit-transform: scale(1.2); // Safari and Chrome 
+    -o-transform: scale(1.2); // Opera 
+}
+
+img.format:hover {
+    /*EDICION IMAGEN LOGO*/
+    transform: scale(1.5);
+    -ms-transform: scale(1.5); // IE 9 
+    -moz-transform: scale(1.5); // Firefox 
+    -webkit-transform: scale(1.5); // Safari and Chrome 
+    -o-transform: scale(1.5); // Opera 
+}
+
+/* RESPONSIVE DE IMAGEN LOGOTIPO */

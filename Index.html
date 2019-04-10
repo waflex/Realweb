@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="css/General.css">
+    <link rel="stylesheet" type="text/css" href="css/Imagen.css">
+    <link rel="stylesheet" type="text/css" href="css/Divs.css">
+    <link rel="stylesheet" type="text/css" href="css/Aside.css">
+    <link rel="stylesheet" type="text/css" href="css/estilos.css">
+    <link rel="stylesheet" type="text/css" href="css/font-awesome.css">
+    <link rel="stylesheet" type="text/css" href="css/IconStyle.css">
+    <link rel="stylesheet" type="text/css" href="css/iconFuentes.css">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="css/MovilResponsive.css">
+    <link rel="stylesheet" type="text/css" href="css/PCResponsive.css">
+    <link rel="stylesheet" type="text/css" href="css/TabletResponsive.css">
+    <link rel="stylesheet" type="text/css" href="css/SocialBar.css">
+    <link rel="stylesheet" type="text/css" href="css/SlideShowImagenes.css">
+    <link rel="stylesheet" type="text/css" href="css/SlideShow.css">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <script src="js/jquery-3.1.0.min.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/npm.js"></script>
+    <script src="js/jquery.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha384-nvAa0+6Qg9clwYCGGPpDQLVpLNn0fRaROjHqs13t4Ggj3Ez50XnGQqc/r8MhnRDZ" crossorigin="anonymous"></script>
+    <script>
+        window.jQuery || document.write('<script src="js/vendor/jquery.min.js"><\/script>')
+    </script>
+    <SCRIPT LANGUAGE="JavaScript">
+        var txt = " Real, rapidez al servir ||";
+        var espera = 250;
+        var refresco = null;
+
+        function rotulo_title() {
+            document.title = txt;
+            txt = txt.substring(1, txt.length) + txt.charAt(0);
+            refresco = setTimeout("rotulo_title()", espera);
+        }
+        rotulo_title();
+    </SCRIPT>
+
+
+    <link rel="shortcut icon" type="image/x-icon" href="Assets/Logo.jpg">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no" />
+</head>
+
+<body>
+    <div class="social-bar">
+        <a href="https://www.facebook.com/" class="icon icon-facebook" target="_blank"></a>
+        <a href="https://twitter.com/" class="icon icon-twitter" target="_blank"></a>
+        <a href="https://www.instagram.com/" class="icon icon-instagram" target="_blank"></a>
+    </div>
+    <header>
+        <div class="container">
+            <div class="divlft">
+                <nav>
+                    <ul>
+                        <li class="menu-li-superior-rigth"><a href="index.html" class="menu-a-superior">Ubicacion</a></li>
+                        <li class="menu-li-superior-rigth"><a href="index.html" class="menu-a-superior">Ubicacion</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="divlog">
+                <nav><a href="Index.html"><img src="Assets/Logo.png" class="format"></a></nav>
+            </div>
+            <div class="divrgt">
+                <nav>
+                    <ul>
+                        <li class="menu-li-superior-left"><a href="index.html" class="menu-a-superior">Ubicacion</a></li>
+                        <li class="menu-li-superior-left"><a href="index.html" class="menu-a-superior">Ubicacion</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+    <article class="articulos">
+        <div class="slideshow">
+            <ul class="slider">
+                <li>
+                    <img src="img/1.jpg" class="format2" alt="">
+                    <section class="caption">
+                        <nav class="fondo">
+                            <h1 class="Titulo-Slideshow">Horarios:</h1>
+                            <p class="Texto-Slideshow">Lunes a viernes: 09:00 - 21:00
+                                <br>Sabado: 10:00 - 21:00</p>
+                        </nav>
+                    </section>
+                </li>
+                <li>
+                    <img src="img/Ensalada.jpg" class="format2" alt="">
+
+                    <section class="caption">
+                        <nav class="fondo">
+                            <h1 class="Titulo-Slideshow">Comida Casera</h1>
+                            <p class="Texto-Slideshow">Ven y disfruta de un rico almuerzo casero, preparado al momento, con ingredientes frescos y deliciosos</p>
+                        </nav>
+                    </section>
+                </li>
+                <li>
+                    <img src="img/Parrila.jpg" class="format2" alt="">
+                    <section class="caption">
+                        <nav class="fondo">
+                            <h1 class="Titulo-Slideshow">Parrilladas</h1>
+                            <p class="Texto-Slideshow">Carnes preparadas a la parrilla lista para ser servida en el momento que la pidas</p>
+                        </nav>
+                    </section>
+                </li>
+                <li>
+                    <img src="img/4.jpg" class="format2" alt="">
+                    <section class="caption">
+                        <nav class="fondo">
+                            <h1 class="Titulo-Slideshow">Visitanos</h1>
+                            <p class="Texto-Slideshow">Nuestra nueva ubicacion es Peni #281, ven y sirvete los platos que tanto te gustan</p>
+                        </nav>
+                    </section>
+                </li>
+                <li>
+                    <img src="img/Chorrilana.jpg" class="format2" alt="">
+                    <section class="caption">
+                        <nav class="fondo">
+                            <h1 class="Titulo-Slideshow">Chorrillanas</h1>
+                            <p class="Texto-Slideshow">Las chorrillanas de siempre, desde la "Terrible" hasta la "Real" pidelas a tu gusto</p>
+                        </nav>
+                    </section>
+                </li>
+            </ul>
+
+            <ol class="pagination">
+
+            </ol>
+
+            <div class="left">
+                <span class="fa fa-chevron-left"></span>
+            </div>
+
+            <div class="right">
+                <span class="fa fa-chevron-right"></span>
+            </div>
+
+        </div>
+
+
+
+
+        <!-- Marketing messaging and featurettes
+    ================================================== -->
+        <!-- Wrap the rest of the page in another container to center all the content. -->
+
+        <div class="container marketing">
+            <hr class="featurette-divider">
+            <!-- Three columns of text below the carousel -->
+            <div class="row">
+                <div class="col-lg-4">
+                    <img class="img-circle" src="img/Chorrilana.jpg" alt="Generic placeholder image" width="140" height="140">
+                    <h2>lomo Saltado</h2>
+                    <p class="text-center">Rico plato de arroz con carne y verduras, preparados en su punto<br>con un agregado de papas fritas para satisfacer esa hambre imperial</p>
+                    <p><a class="btn btn-default" href="#" role="button">Ver detalles &raquo;</a></p>
+                </div><!-- /.col-lg-4 -->
+                <div class="col-lg-4 prueba">
+                    <img class="img-circle" src="img/Ensalada.jpg" alt="Generic placeholder image" width="140" height="140">
+                    <h2>Chorrillana Pulenta</h2>
+                    <p class="text-center">Mezcla de Carnes, con Champiñones y papas fritas, preparado al momento de pedirla, todo fresco y exquisito</p>
+                    <p><a class="btn btn-default" href="#" role="button">Ver Detalles &raquo;</a></p>
+                </div><!-- /.col-lg-4 -->
+                <div class="col-lg-4 prueba">
+                    <img class="img-circle" src="img/Completo.jpg" alt="Generic placeholder image" width="140" height="140">
+                    <h2>Papillote</h2>
+                    <p class="text-center">Pescado envuelto en papel aluminio para ser cocido en la parrila, junto a distintas especias y carnes queda un
+                        placentero sabor dentro de tu paladar</p>
+                    <p><a class="btn btn-default" href="#" role="button">Ver Detalles &raquo;</a></p>
+                </div><!-- /.col-lg-4 -->
+            </div><!-- /.row -->
+
+
+            <!-- START THE FEATURETTES -->
+
+            <hr class="featurette-divider">
+
+            <div class="row featurette centrado">
+                <div class="col-md-7">
+                    <h2 class="featurette-heading">Nuestra <span class="text-muted">Mision</span></h2>
+                    <p class=" text-justify">Es ser uno de los mejores restaurantes de nuestro tipo en la zona, satisfaciendo
+                        a toda nuestra clientela con las mejores delicias en comida rapida y platos de menus, cubriendo una necesidad con profesionalismo, esmero
+                        y rapides, contando con persona de comprobada trayectoria preparando exelentes platos, asi como la atencion rapida y eficiente como usted se merece.
+                    </p>
+                </div>
+                <div class="col-md-0.5 col-md-pull-7">
+                    <img class="img1" src="img/V_1(500).jpg" alt="Imagen">
+                </div>
+            </div>
+
+
+            <div class="row featurette centrado">
+                <div class="col-md-7 col-md-push-5">
+                    <h2 class="featurette-heading">Nuestra <span class="text-muted">Vision</span></h2>
+                    <p class="text-justify">Es llegar a ser en un mediano plazo el mejor lugar de comida rapida y colacion
+                        de toda la IV Region. Ser el numero uno en calidad, atencion y servicio, ofreciendole un standart
+                        de alta calidad y eficiencia desde que usted entra a nuestra intalaciones hasta que salga para que
+                        se sienta a gusto con su familia y amigos y asi seguir mejorando dia a dia para que el comer no sea solo una necesidad si no un placer.
+                    </p>
+                </div>
+                <div class="col-md-0.5 col-md-pull-7">
+                    <img class="img2" src="img/V_1(500).jpg" alt="Imagen">
+                </div>
+            </div>
+
+
+            <div class="row featurette centrado">
+                <div class="col-md-7">
+                    <h2 class="featurette-heading">Nuestro <span class="text-muted">Objetivo</span></h2>
+                    <p class="text-justify">Es ir mejorando en cada area de nuestro establecimiento, cuidando y vigilando
+                        las areas en que necesitan reforzamiento. Atendiendo a cada reclamo y sugerencia para estar pendiente para su estadia sea grata
+                        y placentera, tener nuestro restaurante limpio y ordenado y que nuestra bandera sea nuestra mejor atencion y su entera satisfaccion.
+                        Por que usted como liente se lo merece ya que es el motivo de nuestra existencia.</p>
+                </div>
+                <div class="col-md-0.5 col-md-pull-7">
+                    <img class="img3" src="img/V_1(500).jpg" alt="Imagen">
+                </div>
+            </div>
+
+            <hr class="featurette-divider">
+
+
+        </div><!-- /.container -->
+
+    </article>
+
+    <!-- Footer -->
+    <footer class="page-footer font-small teal ">
+
+        <!-- Footer Text -->
+        <div class="container-fluid text-center text-md-left">
+
+            <!-- Grid row -->
+            <div class="row">
+
+                <!-- Grid column -->
+                <div class="col-md-6 mt-md-0 mt-3">
+
+                    <!-- Content -->
+                    <h5 class="text-uppercase font-weight-bold">Sobre Nosotros</h5>
+                    <p>Direccion: Peni #281 <br>
+                        Contacto: correo@correo.cl<br>
+                        Telefono: 00000000<br>
+
+                    </p>
+
+                </div>
+                <div class="col-md-6 mb-md-0 mb-3">
+
+                    <!-- Content -->
+                    <h5 class="text-uppercase font-weight-bold"></h5>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Optio deserunt fuga perferendis modi earum commodi aperiam temporibus quod nulla nesciunt aliquid debitis ullam omnis quos ipsam, aspernatur id excepturi hic.</p>
+
+                </div>
+                <!-- Grid column -->
+
+            </div>
+            <!-- Grid row -->
+
+        </div>
+        <!-- Footer Text -->
+
+        <!-- Copyright -->
+        <div class="footer-copyright text-center py-3">© 2019 Copyright:
+            <a href="https://www.ipchile.cl/admision/admision-online/?gclid=Cj0KCQjwhPfkBRD0ARIsAAcYycE-NHzD-tDFel5ok-wSCmebbzLENwunxQVW1ez2j1E7ZQ4zYWJNzcIaAm8hEALw_wcB"> IPCHILE Practicantes</a>
+        </div>
+        <!-- Copyright -->
+
+    </footer>
+    <!-- Footer -->
+</body></html>
