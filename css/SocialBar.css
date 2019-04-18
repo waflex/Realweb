@@ -6,7 +6,7 @@ xhtml {
 	position: fixed;
 	right: 0;
 	top: 35%;
-	font-size: 1.5rem;
+	font-size: 1.4rem;
 	display: flex;
 	flex-direction: column;
 	align-items: flex-end;
@@ -14,7 +14,7 @@ xhtml {
 }
 
 .icon {
-	color: white;
+	color: aliceblue;
 	text-decoration: none;
 	padding: .7rem;
 	display: flex;
@@ -25,7 +25,7 @@ xhtml {
 	background: #3b5998;
 }
 
-.icon-twitter {
+.icon-Whatsapp {
 	background: #4dc247;
 }
 
@@ -46,3 +46,4 @@ xhtml {
 	border-radius: 1rem 0 0 1rem;
 	box-shadow: 0 0 .5rem rgba(0, 0, 0, 0.42);
 }
+
