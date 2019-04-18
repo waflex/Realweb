@@ -1,0 +1,320 @@
+/* Diseño para PC Full hd*/
+@media screen and (min-width: 1920px){
+
+    /*Diseño Imagenes*/
+    img.format {
+        width: 80px;
+        margin: 1px;
+        margin-top: 30px;
+        margin-left:-9.5px;
+        
+
+    }
+
+    html,
+    body {
+        /*BLOQUEAR MOVIMIENTO HORIZONTAL*/
+        max-width: 100%;
+        overflow-x: hidden;
+
+    }
+
+
+    li.menu-li-superior-rigth {
+        text-align: left;
+        display: inline-block;
+    }
+
+
+    li.menu-li-superior-left {
+        text-align: right;
+        display: inline-block;
+
+    }
+
+    img.format2 {
+        /*EDICION IMAGEN SLIDE*/
+        width: 900px;
+        border-radius: 40px;
+        height: 900px;
+        display: block;
+        max-height: 100%;
+        max-width: 100%;
+        
+ 
+
+    }
+
+    /*Fin Diseño Imagenes*/
+    body {
+        background-position: center;
+        background-size: 100%;
+        background-attachment: fixed;
+        background-image: url(../Assets/BG.png);
+        box-shadow: inset 0px 0px 650px 122px rgba(0, 0, 0, 0.75);
+
+    }
+
+    header {
+        width: 100%;
+        overflow: hidden;
+        background-image: url(../Assets/Ejemplo%20Banner1080.png);
+        background-size: 1080px;
+        background-position: center;
+        height: 150px;
+        margin:
+
+
+    }
+
+
+    /*CSS IMAGENES VISION MISION OBJETIVO*/
+
+    img.img1 {
+        /*DISEÑO IMAGENES VISION/OBJETIVO/MISION*/
+        transition: all .8s ease-in-out;
+        border-radius: 50%;
+        background-position: left;
+        margin-right: 10px;
+        box-shadow: 0px 0px 30px 2px black
+    }
+
+    img.img2 {
+        /*DISEÑO IMAGENES VISION/OBJETIVO/MISION*/
+        transition: all .8s ease-in-out;
+        border-radius: 50%;
+        margin-left: -400%;
+        box-shadow: 0px 0px 30px 2px black
+    }
+
+    img.img3 {
+        /*DISEÑO IMAGENES VISION/OBJETIVO/MISION*/
+        transition: all .8s ease-in-out;
+        border-radius: 50%;
+        box-shadow: 0px 0px 30px 2px black
+    }
+
+    img.img1:hover {
+        /*DISEÑO IMAGENES VISION/OBJETIVO/MISION*/
+        border-radius: 10%;
+        -webkit-border-radius: 10%;
+        box-shadow: 0px 0px 100px 15px black;
+        -webkit-box-shadow: 0px 0px 100px 15px black;
+        transform: rotate(360deg);
+        -webkit-transform: rotate(360deg);
+    }
+
+    img.img2:hover {
+        /*DISEÑO IMAGENES VISION/OBJETIVO/MISION*/
+        border-radius: 10%;
+        -webkit-border-radius: 10%;
+        box-shadow: 0px 0px 100px 15px black;
+        -webkit-box-shadow: 0px 0px 100px 15px black;
+        transform: rotate(360deg);
+        -webkit-transform: rotate(360deg);
+    }
+
+    img.img3:hover {
+        /*DISEÑO IMAGENES VISION/OBJETIVO/MISION*/
+        border-radius: 10%;
+        -webkit-border-radius: 10%;
+        box-shadow: 0px 0px 100px 15px black;
+        -webkit-box-shadow: 0px 0px 100px 15px black;
+        transform: rotate(360deg);
+        -webkit-transform: rotate(360deg);
+
+    }
+
+    .slider .caption h1.Titulo-Slideshow {
+        font-size: 60px;
+        position: absolute;
+        color: white;
+        bottom: 1800px;
+        left: 400px;
+    }
+
+    .slider .caption p.Texto-Slideshow {
+        justify-content: center;
+        text-align: justify;
+        font-size: 25px;
+        position: absolute;
+        bottom: 1700px;
+    }
+
+
+    .pagination {
+        position: absolute;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        top: 900px;
+
+
+    }
+
+    .pagination li {
+        font-size: 25px;
+        margin: 2px 3px;
+        color: #858585;
+        cursor: pointer;
+    }
+
+    /*Control de FLECHAS IZQUIERDA Y DERECHA*/
+
+    .left,
+    .right {
+        margin-top: 2%;
+        position: absolute;
+        top: 0;
+        height: 100%;
+        text-align: center;
+        display: flex;
+        align-items: center;
+        color: yellow;
+        font-size: 45px;
+        cursor: pointer;
+        z-index: 2;
+        transition: all .5s ease-in-out;
+    }
+
+    .left {
+        left: -0.1px;
+        background-color: black;
+        top: -27px;
+        border-top-left-radius: 50px;
+        border-bottom-left-radius: 50px;
+    }
+
+    .right {
+        right:-1px;
+        background-color: black;
+        top: -27px;
+        border-top-right-radius: 50px; 
+        border-bottom-right-radius: 50px;
+    }
+
+
+    /*CSS PARA EFECTO DE INCREMENTO FLECHAS LATERALES*/
+
+    .right:hover {
+        color: red;
+        text-shadow: -5px 0px 15px black;
+        transform: scale(1.2);
+        border-top-right-radius: 50px; 
+        border-bottom-right-radius: 50px;
+
+    }
+
+    .left:hover {
+        color: red;
+        text-shadow: 5px 0px 15px black;
+        transform: scale(1.2);
+        border-top-left-radius: 50px;
+        border-bottom-left-radius: 50px;
+    }
+
+
+    .centrado {
+        width: 90%;
+        margin-left: 10px;
+    }
+
+    .justificar {
+        text-align: justify;
+    }
+
+    header a {
+        margin-top: 15px;
+        font-size: 15px;
+    }
+
+
+
+    a.menu-a-superior {
+        margin-left: 80px;
+        margin-right: 80px;
+    }
+
+    .posicionar1 {
+        margin-top: 130px;
+    }
+
+    .posicionar2 {
+        margin-top: 130px;
+    }
+
+    .posicionar3 {
+        margin-top: 130px;
+    }
+
+    div.cajatransparente {
+        margin: 30px;
+        background-color: black;
+        border: 1px solid black;
+        opacity: 0.7;
+        filter: alpha(opacity=60);
+
+    }
+
+    div.cajatransparentesuperior {
+        margin: 0px;
+        background-color: black;
+        border: 40px solid black;
+        opacity: 0.7;
+        filter: alpha(opacity=60);
+
+    }
+
+    div.cajatransparente p {
+        margin: 5%;
+        color: white;
+    }
+
+    div.cajatransparente h2.titulo {
+        margin: 5%;
+        font-weight: bold;
+        color: white;
+    }
+
+    div.bordes1 {
+        border-bottom-right-radius: 90%;
+        border-top-left-radius: 50px;
+    }
+
+    div.bordes2 {
+        border-bottom-left-radius: 90%;
+        border-top-right-radius: 50px;
+
+    }
+
+    .hr-invisible {
+        opacity: 0;
+    }
+    div.caption h1.Titulo-Slideshow{
+        background-color: black;
+        width: 500px;
+        height: 100px;
+        opacity: 0.7;
+        
+    }div.caption p{
+        background-color: black;
+        width: 1000px;
+        height: 100px;
+        opacity: 0.7;
+        
+    }
+    p.Texto-Slideshow{
+        text-align-last: center;
+        border-bottom-left-radius: 10% 70%;
+        border-bottom-right-radius: 10% 70%;
+        border-top-left-radius: 10% 70%;
+        border-top-right-radius: 10% 70%;
+        padding: 20px 20px 20px 20px;
+    } h1.Titulo-Slideshow{
+        margin: 30px;
+        text-align-last: center;
+        border-top-left-radius: 10% 70%;
+        border-top-right-radius: 10% 70%;
+        padding: 20px 20px 20px 20px;
+    }
+}
