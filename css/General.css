@@ -7,28 +7,33 @@
 header nav {
     float: right;
     margin-top: 5px;
-    
 }
 
 header nav li a {
     color: red;
-    display:inline-block;
-    transition:all .5s ease-in-out;
+    display: inline-block;
+    transition: all .5s ease-in-out;
     transform: scale(1.2);
-    -ms-transform: scale(1.2); // IE 9 
-    -moz-transform: scale(1.2); // Firefox 
-    -webkit-transform: scale(1.2); // Safari and Chrome 
-    -o-transform: scale(1.2); // Opera 
-     
+    -ms-transform: scale(1.2);
+    /*// IE 9 */
+    -moz-transform: scale(1.2);
+    /*// Firefox */
+    -webkit-transform: scale(1.2);
+    /*// Safari and Chrome */
+    -o-transform: scale(1.2);
+    /*// Opera */
 }
 
 header nav li a:hover {
-    
     transform: scale(1.5);
-    -ms-transform: scale(1.5); // IE 9 
-    -moz-transform: scale(1.5); // Firefox 
-    -webkit-transform: scale(1.5); // Safari and Chrome 
-    -o-transform: scale(1.5); // Opera
+    -ms-transform: scale(1.5);
+    /*// IE 9 */
+    -moz-transform: scale(1.5);
+    /* // Firefox */
+    -webkit-transform: scale(1.5);
+    /*// Safari and Chrome */
+    -o-transform: scale(1.5);
+    /*// Opera*/
 }
 
 body {
@@ -41,6 +46,3 @@ footer {
     /*EDICION PIE DE PAGINA*/
     background-color: black;
 }
-
-
-
