@@ -1,272 +1,322 @@
 <!DOCTYPE html>
-<html>
+<html lang="es">
 <head>
-    <link rel="stylesheet" type="text/css" href="css/General.css">
-    <link rel="stylesheet" type="text/css" href="css/Imagen.css">
-    <link rel="stylesheet" type="text/css" href="css/Divs.css">
-    <link rel="stylesheet" type="text/css" href="css/Aside.css">
-    <link rel="stylesheet" type="text/css" href="css/estilos.css">
-    <link rel="stylesheet" type="text/css" href="css/font-awesome.css">
-    <link rel="stylesheet" type="text/css" href="css/IconStyle.css">
-    <link rel="stylesheet" type="text/css" href="css/iconFuentes.css">
-    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
-    <link rel="stylesheet" type="text/css" href="css/MovilResponsive.css">
-    <link rel="stylesheet" type="text/css" href="css/PCResponsive.css">
-    <link rel="stylesheet" type="text/css" href="css/TabletResponsive.css">
-    <link rel="stylesheet" type="text/css" href="css/SocialBar.css">
-    <link rel="stylesheet" type="text/css" href="css/SlideShowImagenes.css">
-    <link rel="stylesheet" type="text/css" href="css/SlideShow.css">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <script src="js/jquery-3.1.0.min.js"></script>
-    <script src="js/main.js"></script>
-    <script src="js/npm.js"></script>
-    <script src="js/jquery.js"></script>
-    <script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha384-nvAa0+6Qg9clwYCGGPpDQLVpLNn0fRaROjHqs13t4Ggj3Ez50XnGQqc/r8MhnRDZ" crossorigin="anonymous"></script>
-    <script>
-        window.jQuery || document.write('<script src="js/vendor/jquery.min.js"><\/script>')
-    </script>
-    <SCRIPT LANGUAGE="JavaScript">
-        var txt = " Real, rapidez al servir ||";
-        var espera = 250;
-        var refresco = null;
-
-        function rotulo_title() {
-            document.title = txt;
-            txt = txt.substring(1, txt.length) + txt.charAt(0);
-            refresco = setTimeout("rotulo_title()", espera);
-        }
-        rotulo_title();
-    </SCRIPT>
-
-
-    <link rel="shortcut icon" type="image/x-icon" href="Assets/Logo.jpg">
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, user-scalable=no" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurant Real</title>
+    
+    <!-- Favicon -->
+    <link rel="shortcut icon" type="image/x-icon" href="assets/img/Logo.png">
+    
+    <!-- Bootstrap 5 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    
+    <!-- Custom CSS -->
+    <link href="assets/css/styles.css" rel="stylesheet">
 </head>
-
 <body>
-    <div class="social-bar">
-        <a href="https://www.facebook.com/" class="icon icon-facebook" target="_blank"></a>
-        <a href="https://twitter.com/" class="icon icon-twitter" target="_blank"></a>
-        <a href="https://www.instagram.com/" class="icon icon-instagram" target="_blank"></a>
-    </div>
-    <header>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top">
         <div class="container">
-            <div class="divlft">
-                <nav>
-                    <ul>
-                        <li class="menu-li-superior-rigth"><a href="index.html" class="menu-a-superior">Ubicacion</a></li>
-                        <li class="menu-li-superior-rigth"><a href="index.html" class="menu-a-superior">Ubicacion</a></li>
-                    </ul>
-                </nav>
-            </div>
-            <div class="divlog">
-                <nav><a href="Index.html"><img src="Assets/Logo.png" class="format"></a></nav>
-            </div>
-            <div class="divrgt">
-                <nav>
-                    <ul>
-                        <li class="menu-li-superior-left"><a href="index.html" class="menu-a-superior">Ubicacion</a></li>
-                        <li class="menu-li-superior-left"><a href="index.html" class="menu-a-superior">Ubicacion</a></li>
-                    </ul>
-                </nav>
+            <a class="navbar-brand" href="#">
+                <img src="Assets/img/Logo.png" height="50" alt="Restaurant Real Logo">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#inicio">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#menu">Menú</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#nosotros">Nosotros</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contacto">Contacto</a>
+                    </li>
+                </ul>
             </div>
         </div>
-    </header>
-    <article class="articulos">
-        <div class="slideshow">
-            <ul class="slider">
-                <li>
-                    <img src="img/1.jpg" class="format2" alt="">
-                    <section class="caption">
-                        <nav class="fondo">
-                            <h1 class="Titulo-Slideshow">Horarios:</h1>
-                            <p class="Texto-Slideshow">Lunes a viernes: 09:00 - 21:00
-                                <br>Sabado: 10:00 - 21:00</p>
-                        </nav>
-                    </section>
-                </li>
-                <li>
-                    <img src="img/Ensalada.jpg" class="format2" alt="">
+    </nav>
 
-                    <section class="caption">
-                        <nav class="fondo">
-                            <h1 class="Titulo-Slideshow">Comida Casera</h1>
-                            <p class="Texto-Slideshow">Ven y disfruta de un rico almuerzo casero, preparado al momento, con ingredientes frescos y deliciosos</p>
-                        </nav>
-                    </section>
-                </li>
-                <li>
-                    <img src="img/Parrila.jpg" class="format2" alt="">
-                    <section class="caption">
-                        <nav class="fondo">
-                            <h1 class="Titulo-Slideshow">Parrilladas</h1>
-                            <p class="Texto-Slideshow">Carnes preparadas a la parrilla lista para ser servida en el momento que la pidas</p>
-                        </nav>
-                    </section>
-                </li>
-                <li>
-                    <img src="img/4.jpg" class="format2" alt="">
-                    <section class="caption">
-                        <nav class="fondo">
-                            <h1 class="Titulo-Slideshow">Visitanos</h1>
-                            <p class="Texto-Slideshow">Nuestra nueva ubicacion es Peni #281, ven y sirvete los platos que tanto te gustan</p>
-                        </nav>
-                    </section>
-                </li>
-                <li>
-                    <img src="img/Chorrilana.jpg" class="format2" alt="">
-                    <section class="caption">
-                        <nav class="fondo">
-                            <h1 class="Titulo-Slideshow">Chorrillanas</h1>
-                            <p class="Texto-Slideshow">Las chorrillanas de siempre, desde la "Terrible" hasta la "Real" pidelas a tu gusto</p>
-                        </nav>
-                    </section>
-                </li>
-            </ul>
-
-            <ol class="pagination">
-
-            </ol>
-
-            <div class="left">
-                <span class="fa fa-chevron-left"></span>
+    <!-- Hero Section -->
+    <section class="hero-section" id="inicio">
+        <div class="container text-center">
+            <h1 class="display-3 fw-bold mb-4">Restaurant Real</h1>
+            <p class="lead mb-4">Sabores auténticos, momentos inolvidables</p>
+            <div class="d-flex justify-content-center gap-3">
+                <a href="#menu" class="btn btn-primary btn-lg">Ver Menú</a>
+                <a href="#reservas" class="btn btn-outline-light btn-lg">Reservar Mesa</a>
             </div>
-
-            <div class="right">
-                <span class="fa fa-chevron-right"></span>
-            </div>
-
         </div>
+    </section>
 
+    <!-- Featured Sections -->
+    <section class="py-5">
+        <div class="container">
+            <div class="row g-4">
+                <!-- Horarios -->
+                <div class="col-md-4">
+                    <div class="card h-100 border-0 shadow-sm">
+                        <div class="card-body text-center">
+                            <i class="fas fa-clock fa-3x mb-3 text-primary"></i>
+                            <h3 class="h4 mb-3">Horarios</h3>
+                            <p class="mb-2">Lunes a viernes: 09:00 - 21:00</p>
+                            <p>Sábado: 10:00 - 21:00</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Especialidad -->
+                <div class="col-md-4">
+                    <div class="card h-100 border-0 shadow-sm">
+                        <div class="card-body text-center">
+                            <i class="fas fa-utensils fa-3x mb-3 text-primary"></i>
+                            <h3 class="h4 mb-3">Nuestra Especialidad</h3>
+                            <p>Parrilladas y comida casera preparada con ingredientes frescos y de primera calidad.</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Ubicación -->
+                <div class="col-md-4">
+                    <div class="card h-100 border-0 shadow-sm">
+                        <div class="card-body text-center">
+                            <i class="fas fa-map-marker-alt fa-3x mb-3 text-primary"></i>
+                            <h3 class="h4 mb-3">Ubicación</h3>
+                            <p>Peni #281</p>
+                            <a href="#mapa" class="btn btn-outline-primary btn-sm">Ver en mapa</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
+    <!-- Menú Section -->
+    <section id="menu" class="py-5 bg-light">
+        <div class="container">
+            <h2 class="text-center mb-5">Nuestro Menú</h2>
+            <div class="row g-4">
+                <!-- Parrilladas -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="card h-100 border-0 shadow-sm">
+                        <img src="Assets/img/Parrila.jpg" class="card-img-top" alt="Parrilladas">
+                        <div class="card-body">
+                            <h3 class="h5 mb-3">Parrilladas</h3>
+                            <p class="card-text">Deliciosas carnes a la parrilla, preparadas al momento.</p>
+                            <p class="text-primary fw-bold">Desde $15.990</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Chorrillanas -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="card h-100 border-0 shadow-sm">
+                        <img src="Assets/img/Chorrilana.jpg" class="card-img-top" alt="Chorrillanas">
+                        <div class="card-body">
+                            <h3 class="h5 mb-3">Chorrillanas</h3>
+                            <p class="card-text">Nuestra especialidad, en distintos tamaños para compartir.</p>
+                            <p class="text-primary fw-bold">Desde $12.990</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Ensaladas -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="card h-100 border-0 shadow-sm">
+                        <img src="Assets/img/Ensalada.jpg" class="card-img-top" alt="Ensaladas">
+                        <div class="card-body">
+                            <h3 class="h5 mb-3">Ensaladas</h3>
+                            <p class="card-text">Frescas y saludables, preparadas con ingredientes de temporada.</p>
+                            <p class="text-primary fw-bold">Desde $5.990</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
+    <!-- Nosotros Section -->
+    <section id="nosotros" class="py-5">
+        <div class="container">
+            <!-- Historia -->
+            <div class="row align-items-center mb-5">
+                <div class="col-lg-6">
+                    <h2 class="mb-4">Nuestra Historia</h2>
+                    <p class="lead mb-4">Desde 2005, Restaurant Real ha sido sinónimo de calidad y tradición en la cocina chilena.</p>
+                    <div class="d-flex gap-3 mb-4">
+                        <div>
+                            <h3 class="h4 text-primary">20+</h3>
+                            <p>Años de experiencia</p>
+                        </div>
+                        <div>
+                            <h3 class="h4 text-primary">1000+</h3>
+                            <p>Clientes satisfechos</p>
+                        </div>
+                        <div>
+                            <h3 class="h4 text-primary">50+</h3>
+                            <p>Platos diferentes</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <img src="Assets/img/Logo.jpg" alt="Restaurant Real" class="img-fluid rounded shadow">
+                </div>
+            </div>
 
-        <!-- Marketing messaging and featurettes
-    ================================================== -->
-        <!-- Wrap the rest of the page in another container to center all the content. -->
-
-        <div class="container marketing">
-            <hr class="featurette-divider">
-            <!-- Three columns of text below the carousel -->
-            <div class="row">
-                <div class="col-lg-4">
-                    <img class="img-circle" src="img/Chorrilana.jpg" alt="Generic placeholder image" width="140" height="140">
-                    <h2>lomo Saltado</h2>
-                    <p class="text-center">Rico plato de arroz con carne y verduras, preparados en su punto<br>con un agregado de papas fritas para satisfacer esa hambre imperial</p>
-                    <p><a class="btn btn-default" href="#" role="button">Ver detalles &raquo;</a></p>
-                </div><!-- /.col-lg-4 -->
-                <div class="col-lg-4 prueba">
-                    <img class="img-circle" src="img/Ensalada.jpg" alt="Generic placeholder image" width="140" height="140">
-                    <h2>Chorrillana Pulenta</h2>
-                    <p class="text-center">Mezcla de Carnes, con Champiñones y papas fritas, preparado al momento de pedirla, todo fresco y exquisito</p>
-                    <p><a class="btn btn-default" href="#" role="button">Ver Detalles &raquo;</a></p>
-                </div><!-- /.col-lg-4 -->
-                <div class="col-lg-4 prueba">
-                    <img class="img-circle" src="img/Completo.jpg" alt="Generic placeholder image" width="140" height="140">
-                    <h2>Papillote</h2>
-                    <p class="text-center">Pescado envuelto en papel aluminio para ser cocido en la parrila, junto a distintas especias y carnes queda un
-                        placentero sabor dentro de tu paladar</p>
-                    <p><a class="btn btn-default" href="#" role="button">Ver Detalles &raquo;</a></p>
-                </div><!-- /.col-lg-4 -->
-            </div><!-- /.row -->
-
-
-            <!-- START THE FEATURETTES -->
-
-            <hr class="featurette-divider">
-
-            <div class="row featurette centrado">
-                <div class="col-md-7">
-                    <h2 class="featurette-heading">Nuestra <span class="text-muted">Mision</span></h2>
-                    <p class=" text-justify">Es ser uno de los mejores restaurantes de nuestro tipo en la zona, satisfaciendo
-                        a toda nuestra clientela con las mejores delicias en comida rapida y platos de menus, cubriendo una necesidad con profesionalismo, esmero
-                        y rapides, contando con persona de comprobada trayectoria preparando exelentes platos, asi como la atencion rapida y eficiente como usted se merece.
+            <!-- Misión -->
+            <div class="row align-items-center mb-5">
+                <div class="col-lg-7">
+                    <h2 class="mb-4">Nuestra <span class="text-muted">Misión</span></h2>
+                    <p class="text-justify">Es ser uno de los mejores restaurantes de nuestro tipo en la zona, satisfaciendo
+                        a toda nuestra clientela con las mejores delicias en comida rápida y platos de menús, cubriendo una necesidad con profesionalismo, esmero
+                        y rapidez, contando con personal de comprobada trayectoria preparando excelentes platos, así como la atención rápida y eficiente como usted se merece.
                     </p>
                 </div>
-                <div class="col-md-0.5 col-md-pull-7">
-                    <img class="img1" src="img/V_1(500).jpg" alt="Imagen">
+                <div class="col-lg-5">
+                    <img src="Assets/img/1.jpg" alt="Nuestra Misión" class="img-fluid rounded shadow">
                 </div>
             </div>
 
-
-            <div class="row featurette centrado">
-                <div class="col-md-7 col-md-push-5">
-                    <h2 class="featurette-heading">Nuestra <span class="text-muted">Vision</span></h2>
-                    <p class="text-justify">Es llegar a ser en un mediano plazo el mejor lugar de comida rapida y colacion
-                        de toda la IV Region. Ser el numero uno en calidad, atencion y servicio, ofreciendole un standart
-                        de alta calidad y eficiencia desde que usted entra a nuestra intalaciones hasta que salga para que
-                        se sienta a gusto con su familia y amigos y asi seguir mejorando dia a dia para que el comer no sea solo una necesidad si no un placer.
+            <!-- Visión -->
+            <div class="row align-items-center mb-5">
+                
+                <div class="col-lg-7 order-lg-1">
+                    <h2 class="mb-4">Nuestra <span class="text-muted">Visión</span></h2>
+                    <p class="text-justify">Es llegar a ser en un mediano plazo el mejor lugar de comida rápida y colación
+                        de toda la IV Región. Ser el número uno en calidad, atención y servicio, ofreciéndole un estándar
+                        de alta calidad y eficiencia desde que usted entra a nuestras instalaciones hasta que salga para que
+                        se sienta a gusto con su familia y amigos y así seguir mejorando día a día para que el comer no sea solo una necesidad sino un placer.
                     </p>
                 </div>
-                <div class="col-md-0.5 col-md-pull-7">
-                    <img class="img2" src="img/V_1(500).jpg" alt="Imagen">
+                <div class="col-lg-5">
+                    <img src="Assets/img/Ensalada.jpg" alt="Nuestra Visión" class="img-fluid rounded shadow">
                 </div>
             </div>
 
-
-            <div class="row featurette centrado">
-                <div class="col-md-7">
-                    <h2 class="featurette-heading">Nuestro <span class="text-muted">Objetivo</span></h2>
-                    <p class="text-justify">Es ir mejorando en cada area de nuestro establecimiento, cuidando y vigilando
-                        las areas en que necesitan reforzamiento. Atendiendo a cada reclamo y sugerencia para estar pendiente para su estadia sea grata
-                        y placentera, tener nuestro restaurante limpio y ordenado y que nuestra bandera sea nuestra mejor atencion y su entera satisfaccion.
-                        Por que usted como liente se lo merece ya que es el motivo de nuestra existencia.</p>
+            <!-- Objetivo -->
+            <div class="row align-items-center">
+                <div class="col-lg-7">
+                    <h2 class="mb-4">Nuestro <span class="text-muted">Objetivo</span></h2>
+                    <p class="text-justify">Es ir mejorando en cada área de nuestro establecimiento, cuidando y vigilando
+                        las áreas que necesitan reforzamiento. Atendiendo a cada reclamo y sugerencia para estar pendiente que su estadía sea grata
+                        y placentera, tener nuestro restaurante limpio y ordenado y que nuestra bandera sea nuestra mejor atención y su entera satisfacción.
+                        Porque usted como cliente se lo merece ya que es el motivo de nuestra existencia.</p>
                 </div>
-                <div class="col-md-0.5 col-md-pull-7">
-                    <img class="img3" src="img/V_1(500).jpg" alt="Imagen">
+                <div class="col-lg-5">
+                    <img src="Assets/img/V_1.jpg" alt="Nuestro Objetivo" class="img-fluid rounded shadow">
                 </div>
             </div>
+        </div>
+    </section>
 
-            <hr class="featurette-divider">
-
-
-        </div><!-- /.container -->
-
-    </article>
+    <!-- Contacto Section -->
+    <section id="contacto" class="py-5 bg-light">
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-lg-6">
+                    <h2 class="mb-4">Contacto</h2>
+                    <form>
+                        <div class="mb-3">
+                            <input type="text" class="form-control" placeholder="Nombre completo" required>
+                        </div>
+                        <div class="mb-3">
+                            <input type="email" class="form-control" placeholder="Email" required>
+                        </div>
+                        <div class="mb-3">
+                            <input type="tel" class="form-control" placeholder="Teléfono">
+                            
+                        </div>
+                        <div class="mb-3">
+                            <textarea class="form-control" rows="4" placeholder="Mensaje" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Enviar mensaje</button>
+                    </form>
+                </div>
+                <div class="col-lg-6" id="mapa">
+                    <h2 class="mb-4">Ubicación</h2>
+                    <div class="ratio ratio-4x3 mb-4">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d260.0637483396141!2d-71.25403074244494!3d-29.90721342692089!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e1!3m2!1ses-419!2scl!4v1745896215769!5m2!1ses-419!2scl" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                    <div class="d-flex gap-4">
+                        <div>
+                            <h3 class="h5 mb-3">Dirección</h3>
+                            <p>Peni #281<br>Ciudad, Región</p>
+                        </div>
+                        <div>
+                            <h3 class="h5 mb-3">Teléfono</h3>
+                            <p>+56 9 XXXX XXXX</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
     <!-- Footer -->
-    <footer class="page-footer font-small teal ">
-
-        <!-- Footer Text -->
-        <div class="container-fluid text-center text-md-left">
-
-            <!-- Grid row -->
+    <footer class="bg-dark text-white py-4">
+        <div class="container">
             <div class="row">
-
-                <!-- Grid column -->
-                <div class="col-md-6 mt-md-0 mt-3">
-
-                    <!-- Content -->
-                    <h5 class="text-uppercase font-weight-bold">Sobre Nosotros</h5>
-                    <p>Direccion: Peni #281 <br>
-                        Contacto: correo@correo.cl<br>
-                        Telefono: 00000000<br>
-
-                    </p>
-
+                <div class="col-md-4">
+                    <h3 class="h5 mb-3">Restaurant Real</h3>
+                    <p class="mb-0">Tradición y calidad desde 1995</p>
                 </div>
-                <div class="col-md-6 mb-md-0 mb-3">
-
-                    <!-- Content -->
-                    <h5 class="text-uppercase font-weight-bold"></h5>
-                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Optio deserunt fuga perferendis modi earum commodi aperiam temporibus quod nulla nesciunt aliquid debitis ullam omnis quos ipsam, aspernatur id excepturi hic.</p>
-
+                <div class="col-md-4">
+                    <h3 class="h5 mb-3">Síguenos</h3>
+                    <div class="social-icons">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                    </div>
                 </div>
-                <!-- Grid column -->
-
+                <div class="col-md-4">
+                    <h3 class="h5 mb-3">Horarios</h3>
+                    <p class="mb-0">Lunes a Viernes: 09:00 - 21:00<br>Sábado: 10:00 - 21:00</p>
+                </div>
             </div>
-            <!-- Grid row -->
-
+            <hr class="my-4">
+            <p class="text-center mb-0">&copy; 2025 Restaurant Real. Todos los derechos reservados.</p>
         </div>
-        <!-- Footer Text -->
-
-        <!-- Copyright -->
-        <div class="footer-copyright text-center py-3">© 2019 Copyright:
-            <a href="https://www.ipchile.cl/admision/admision-online/?gclid=Cj0KCQjwhPfkBRD0ARIsAAcYycE-NHzD-tDFel5ok-wSCmebbzLENwunxQVW1ez2j1E7ZQ4zYWJNzcIaAm8hEALw_wcB"> IPCHILE Practicantes</a>
-        </div>
-        <!-- Copyright -->
-
     </footer>
-    <!-- Footer -->
-</body></html>
+
+    <!-- Theme Toggle Button -->
+    <button class="theme-toggle" id="themeToggle">
+        <i class="fas fa-moon"></i>
+    </button>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    
+    <!-- Theme Toggle Script -->
+    <script>
+        const themeToggle = document.getElementById('themeToggle');
+        const themeIcon = themeToggle.querySelector('i');
+        
+        // Check for saved theme preference
+        const currentTheme = localStorage.getItem('theme');
+        if (currentTheme) {
+            document.documentElement.setAttribute('data-theme', currentTheme);
+            updateIcon(currentTheme);
+        }
+
+        // Toggle theme function
+        themeToggle.addEventListener('click', () => {
+            const currentTheme = document.documentElement.getAttribute('data-theme');
+            const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
+            
+            document.documentElement.setAttribute('data-theme', newTheme);
+            localStorage.setItem('theme', newTheme);
+            updateIcon(newTheme);
+        });
+
+        // Update icon based on theme
+        function updateIcon(theme) {
+            themeIcon.className = theme === 'dark' ? 'fas fa-sun' : 'fas fa-moon';
+        }
+    </script>
+</body>
+</html>
